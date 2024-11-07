@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #b61111;
+    --secondary-color: #1e36cf;
+    --accent1-color: #C9ADA7;
+    --accent2-color: #e29578;
+    --accent3-color: #9A8C98;
+    --main-font: "Kanit";
+    --secondary-font: "Orbitron";
+    --nav-background-color: #ffddd2;
+    --nav-link-color: #4A4E69;
+    --nav-hover-link-color: #ffddd2;
+    --nav-hover-background-color: #78e2b6;
+}
+
+body {
+    width: 900px;
+    margin: auto;
+    background-color: #9A8C98;
+}
+
+header {
+    display: block;
+    text-align: center;
+    width: auto;
+    padding: 20px;
+    background-color: #78e2b6;
+}
