@@ -1,28 +1,29 @@
 :root {
     --primary-color: #b61111;
-    --secondary-color: #1e36cf;
-    --accent1-color: #C9ADA7;
-    --accent2-color: #e29578;
-    --accent3-color: #9A8C98;
+    --secondary-color: #ffffff;
+    --accent1-color: #636060;
+    --accent2-color: #b0e278;
+    --accent3-color: #b942a7;
     --main-font: "Kanit";
     --secondary-font: "Orbitron";
     --nav-background-color: #ffddd2;
-    --nav-link-color: #4A4E69;
-    --nav-hover-link-color: #ffddd2;
+    --nav-link-color: #0b2f44;
+    --nav-hover-link-color: #9e928f;
     --nav-hover-background-color: #78e2b6;
 }
 
 body {
     width: 900px;
-    margin: auto;
-    background-color: #9A8C98;
+    margin: 0 auto;
+    background-color: #ffffff;
+    display: block;
 }
 
 header {
     display: block;
     text-align: center;
     width: auto;
-    padding: 20px;
+    padding: 20px 0 0 0;
     background-color: #78e2b6;
 }
 
@@ -34,8 +35,8 @@ header h1 {
 h1,
 h2,
 h3 {
-    font-family: var(--secondary-font);
-    color: var(--secondary-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
 }
 
 h1 {
@@ -50,7 +51,7 @@ h1 {
 
 header nav {
     display: flex;
-    background-color: #78e2b6;
+    background-color: #4A4E69;
     justify-content: space-around;
 }
 
@@ -60,7 +61,7 @@ nav {
 }
 
 nav a {
-    color: var(--primary-color);
+    color: #ffffff;
     text-decoration: none;
     padding: 1rem;
     width: auto;
@@ -68,17 +69,17 @@ nav a {
 }
 
 a {
-    font-family: var(--main-font);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 main {
     display: grid;
-    gap: 20px;
-    padding: 10px;
+    gap: 10px;
+    padding: 5px;
     grid-auto-rows: 4fr 1fr;
-    grid-auto-columns: 3rf 1fr;
+    grid-auto-columns: 3fr 1fr;
     max-width: fit-content;
-    font-family: var(--secondary-font);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 section {
@@ -89,17 +90,23 @@ section {
 .card1 {
     grid-column: 1/5;
     grid-row: 1/4;
-    background-color: #e29578;
+    background-color: #78e2b6;
     display: grid;
     grid-auto-rows: auto;
     grid-auto-columns: 1fr 2fr;
     gap: 5px;
-    border: solid 3px var(--main-font);
+    border: solid 2px #4A4E69;
+    border-radius: 10px;
+}
+
+header h2 {
+    color: #78e2b6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h2 {
     display: block;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -108,11 +115,12 @@ h2 {
     unicode-bidi: isolate;
 }
 
-.card1 h2 {
+.card1>h2 {
     grid-row: 1;
-    grid-column: 1/3;
+    grid-column: 1 / 3;
     text-align: center;
-    background-color: var(--primary-color);
+    background-color: #4A4E69;
+    margin: 0;
 }
 
 #mepic {
@@ -120,14 +128,20 @@ h2 {
     grid-row: 2;
     align-self: center;
     justify-self: center;
+    width: 200px;
+    height: auto;
+    border: 2px solid var(--primary-color);
+    padding: 1px;
+    box-shadow: 0 0 30px #4A4E69;
+    margin-top: 1px;
 }
 
 img {
-    overflow: clip;
+    overflow: auto;
 }
 
 #aboutme {
-    pad: 20px;
+    padding-left: 20px;
     grid-column: 1;
     grid-row: 2;
 }
@@ -139,19 +153,20 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+    color: #4A4E69;
 }
 
 .card1 h3 {
     grid-row: 3;
     grid-column: 1/3;
-    background-color: #78e2b6;
+    background-color: #4A4E69;
     margin: 0;
     text-align: center;
 }
 
 h3 {
     display: block;
-    font-size: 1em;
+    font-size: 1.5em;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -172,6 +187,7 @@ figure {
 figcaption {
     display: block;
     unicode-bidi: isolate;
+    color: #4A4E69;
 }
 
 #aboutcalifornia {
@@ -182,13 +198,14 @@ figcaption {
     padding: 10px;
     grid-column: 5;
     grid-row: 1/4;
-    border: solid 2px var(--secondary-color);
+    border: solid 2px #4A4E69;
     text-align: center;
     background-color: #78e2b6;
+    border-radius: 10px;
 }
 
 .card2 h2 {
-    color: #4A4E69;
+    color: #ffffff;
 }
 
 .card2 nav {
@@ -197,10 +214,13 @@ figcaption {
 }
 
 footer {
-    background-color: #9A8C98;
+    background-color: #4A4E69;
     text-align: center;
-    font-family: var(--main-font);
-    color: #b61111;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    padding: 5px;
 }
 
-
+footer p {
+    color: #ffffff;
+}
