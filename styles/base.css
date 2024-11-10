@@ -24,7 +24,7 @@ header {
     text-align: center;
     width: auto;
     padding: 20px 0 0 0;
-    background-color: #78e2b6;
+    background-color: #208b5f;
 }
 
 header h1 {
@@ -51,7 +51,7 @@ h1 {
 
 header nav {
     display: flex;
-    background-color: #4A4E69;
+    background-color: #18288d;
     justify-content: space-around;
 }
 
@@ -63,9 +63,13 @@ nav {
 nav a {
     color: #ffffff;
     text-decoration: none;
-    padding: 1rem;
+    padding: .5rem;
     width: auto;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    background-color: #b61111;
 }
 
 a {
@@ -90,12 +94,12 @@ section {
 .card1 {
     grid-column: 1/5;
     grid-row: 1/4;
-    background-color: #78e2b6;
+    background-color: #208b5f;
     display: grid;
     grid-auto-rows: auto;
     grid-auto-columns: 1fr 2fr;
     gap: 5px;
-    border: solid 2px #4A4E69;
+    border: solid 2px #18288d;
     border-radius: 10px;
 }
 
@@ -119,7 +123,7 @@ h2 {
     grid-row: 1;
     grid-column: 1 / 3;
     text-align: center;
-    background-color: #4A4E69;
+    background-color: #18288d;
     margin: 0;
 }
 
@@ -132,7 +136,7 @@ h2 {
     height: auto;
     border: 2px solid var(--primary-color);
     padding: 1px;
-    box-shadow: 0 0 30px #4A4E69;
+    box-shadow: 0 0 30px #18288d;
     margin-top: 1px;
 }
 
@@ -153,13 +157,13 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-    color: #4A4E69;
+    color: #ffffff;
 }
 
 .card1 h3 {
     grid-row: 3;
     grid-column: 1/3;
-    background-color: #4A4E69;
+    background-color: #18288d;
     margin: 0;
     text-align: center;
 }
@@ -187,7 +191,7 @@ figure {
 figcaption {
     display: block;
     unicode-bidi: isolate;
-    color: #4A4E69;
+    color: #ffffff;
 }
 
 #aboutcalifornia {
@@ -198,9 +202,9 @@ figcaption {
     padding: 10px;
     grid-column: 5;
     grid-row: 1/4;
-    border: solid 2px #4A4E69;
+    border: solid 2px #18288d;
     text-align: center;
-    background-color: #78e2b6;
+    background-color: #208b5f;
     border-radius: 10px;
 }
 
@@ -214,7 +218,7 @@ figcaption {
 }
 
 footer {
-    background-color: #4A4E69;
+    background-color: #18288d;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff;
