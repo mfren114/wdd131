@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
 }
 
 header,
@@ -9,7 +9,7 @@ footer {
     margin: 1rem auto;
     border: 1px solid white;
     padding: 1rem;
-    background-color: rgb(99, 99, 201);
+    background-color: rgb(96, 96, 245);
 }
 
 main {
