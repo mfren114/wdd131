@@ -1,4 +1,7 @@
-const currentDate = new Date();
-const currentYear = currentDate.getFullYear();
+const currentYear = new Date().getFullYear();
 
-const lastModified = 
+document.getElementById("currentYear").textContent = currentYear;
+
+alert(document.lastModified);
+const lastModified = document.lastModified;
+document.getElementById("lastModified").textContent = lastModified;
