@@ -4,7 +4,7 @@
     --accent1-color: #636060;
     --accent2-color: #b0e278;
     --accent3-color: #b942a7;
-    --main-font: "Kanit";
+    --main-font: "Roboto";
     --secondary-font: "Orbitron";
     --nav-background-color: #ffddd2;
     --nav-link-color: #0b2f44;
@@ -35,7 +35,7 @@ header h1 {
 h1,
 h2,
 h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--main-font);
     color: #ffffff;
 }
 
@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 a {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--main-font);
 }
 
 main {
@@ -83,7 +83,7 @@ main {
     grid-auto-rows: 4fr 1fr;
     grid-auto-columns: 3fr 1fr;
     max-width: fit-content;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--main-font);
 }
 
 section {
@@ -105,7 +105,7 @@ section {
 
 header h2 {
     color: #78e2b6;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--main-font);
 }
 
 h2 {
@@ -220,7 +220,7 @@ figcaption {
 footer {
     background-color: #18288d;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--main-font);
     color: #ffffff;
     padding: 5px;
 }
