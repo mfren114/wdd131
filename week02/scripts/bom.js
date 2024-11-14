@@ -12,3 +12,15 @@ deleteButton.textContent = "X";
 li.append(deleteButton);
 list.append(li);
 
+button.addEventListener("click", function() {
+    button.focus()
+});
+
+deleteButton.addEventListener("click", function(){
+    list.removeChild(li);
+    input.focus();
+});
+
+input.value = "";
+input.focus();
+
