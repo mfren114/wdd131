@@ -44,8 +44,8 @@ header nav {
     background-color: #303035;
     justify-content: right;
     border-radius: 5px;
-
 }
+
 
 nav {
     display: block;
@@ -83,6 +83,16 @@ main {
 main h2 {
     position: absolute;
     top: 170px;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #ffffff;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
 }
 
 h2 {
