@@ -57,7 +57,7 @@ header nav {
     list-style-type: none;
 }
 
-.navigation li:hover {
+.navigation a:hover {
     background-color: #dd7575;
 }
 
