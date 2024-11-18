@@ -40,9 +40,9 @@ h1 {
 }
 
 header nav {
-    
+
     background-color: #303035;
-    
+
     border-radius: 5px;
 }
 
@@ -62,6 +62,7 @@ header nav {
     text-align: right;
     justify-content: right;
     display: flex;
+    list-style-type: none;
 }
 
 .navigation li:hover {
@@ -70,6 +71,10 @@ header nav {
 
 .navigation li {
     font-family: "Roboto", sans-serif;
+}
+
+.navigation a {
+    color: #ffffff;
 }
 
 main {

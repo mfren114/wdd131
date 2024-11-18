@@ -48,27 +48,32 @@
 
     }
 
-    nav {
+    .navigation {
         display: block;
         unicode-bidi: isolate;
     }
 
-    nav a {
+    .navigation ul {
         color: #ffffff;
         text-decoration: none;
         padding: .5rem;
         width: auto;
         font-size: 1.5rem;
         text-align: right;
+        list-style-type: none;
 
     }
 
-    nav a:hover {
+    .navigation li:hover {
         background-color: #dd7575;
     }
 
-    a {
+    .navigation li {
         font-family: "Roboto", sans-serif;
+    }
+
+    .navigation a {
+        color: #ffffff;
     }
 
     main {
@@ -83,7 +88,7 @@
 
     main h2 {
         position: absolute;
-        top: 170px;
+        top: 200px;
     }
 
     h2 {
@@ -150,5 +155,9 @@
 
     footer p {
         color: #ffffff;
+    }
+
+    #hamburger {
+        display: none;
     }
 }
