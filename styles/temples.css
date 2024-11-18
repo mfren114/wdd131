@@ -15,6 +15,7 @@ header {
     font-family: "Roboto", sans-serif;
     text-indent: 1rem;
     border-radius: 5px;
+
 }
 
 header h1 {
@@ -23,8 +24,7 @@ header h1 {
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: var(--main-font);
     color: #ffffff;
 }
@@ -40,33 +40,35 @@ h1 {
 }
 
 header nav {
-    display: flex;
+    
     background-color: #303035;
-    justify-content: right;
+    
     border-radius: 5px;
 }
 
 
-nav {
+.navigation {
     display: block;
     unicode-bidi: isolate;
+
 }
 
-nav a {
+.navigation ul {
     color: #ffffff;
     text-decoration: none;
     padding: .5rem;
     width: auto;
     font-size: 1.5rem;
     text-align: right;
-
+    justify-content: right;
+    display: flex;
 }
 
-nav a:hover {
+.navigation li:hover {
     background-color: #dd7575;
 }
 
-a {
+.navigation li {
     font-family: "Roboto", sans-serif;
 }
 
@@ -107,6 +109,7 @@ h2 {
     color: #303035;
     text-align: center;
     font-family: "Roboto", sans-serif;
+
 }
 
 p {
@@ -160,7 +163,7 @@ footer p {
     color: #ffffff;
 }
 
-#menu {
+#hamburger {
     font-size: 1.5rem;
     border: 0;
     background: none;
@@ -171,12 +174,11 @@ footer p {
 }
 
 
-#menu::before {
+#hamburger::before {
     content: "☰";
-
 }
 
-#menu.open::before {
+#hamburger.open::before {
     content: "❌";
 
 }
