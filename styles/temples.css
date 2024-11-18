@@ -42,15 +42,7 @@ h1 {
 header nav {
 
     background-color: #303035;
-
     border-radius: 5px;
-}
-
-
-.navigation {
-    display: block;
-    unicode-bidi: isolate;
-
 }
 
 .navigation ul {
@@ -175,7 +167,7 @@ footer p {
     color: #000;
     position: absolute;
     top: 1rem;
-    right: 2rem;
+    right: -35rem;
 }
 
 
