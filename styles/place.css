@@ -38,6 +38,34 @@ h1 {
     unicode-bidi: isolate;
 }
 
+main {
+    max-width: max-content;
+    display: grid;
+    padding: 0.1rem;
+    grid-template-columns: 1fr;
+    grid-gap: 0.1rem;
+    max-width: fit-content;
+    font-family: "Verdana", sans-serif;
+}
+
+figure {
+    display: block;
+    margin-block-start: -0.5em;
+    margin-block-end: -0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: 30px;
+    unicode-bidi: isolate;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px;
+}
+
 footer {
     background-color: #eae39a;
     text-align: center;
