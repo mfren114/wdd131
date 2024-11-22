@@ -1,3 +1,8 @@
+.root {
+    --font-color: #700000;
+    --background-color: #eae39a;
+}
+
 body {
     width: 1500px;
     margin: 0 auto;
