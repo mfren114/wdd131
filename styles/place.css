@@ -15,7 +15,7 @@ header {
     text-align: Center;
     width: auto;
     padding: 20px 0 0 0;
-    background-color: #eae39a;
+    background-color: var(--background-color);
     margin: 1rem auto;
     font-family: "Verdana", sans-serif;
     text-indent: 1rem;
@@ -30,7 +30,7 @@ header h1 {
 h1,
 h2 {
     font-family: "Verdana", sans-serif;
-    color: #700000;
+    color: var(--font-color);
 }
 
 h1 {
