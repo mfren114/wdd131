@@ -55,6 +55,11 @@
         font-family: "Verdana", sans-serif;
     }
 
+    section {
+        display: block;
+        unicode-bidi: isolate;
+    }
+
     picture {
         display: block;
         margin-block-start: -0.5em;
