@@ -88,4 +88,8 @@
         font-family: "Verdana", sans-serif;
         border-radius: 5px;
     }
+
+    .weather h2::after {
+        content: "🌤️";
+    }
 }

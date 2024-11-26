@@ -4,7 +4,7 @@
     }
 
     body {
-        width: 1200px;
+        width: 600px;
         margin: 0 auto;
         background-color: #ffffff;
         display: block;
@@ -54,7 +54,7 @@
     }
 
     section {
-        display: block;
+        display: flex;
         unicode-bidi: isolate;
     }
 
@@ -73,8 +73,20 @@
         padding: 5px;
         width: 300px;
         text-align: center;
-        opacity: 0.9;
+        opacity: 0.7;
         font-weight: bolder;
+    }
+
+    .data h3 {
+        grid-column: 1;
+        justify-self: left;
+        margin: 1px;
+    }
+
+    .data p{
+        grid-column: 2;
+        margin: 1px;
+        justify-self: right;
     }
 
     .weather {
@@ -92,6 +104,13 @@
         width: 300px;
         text-align: center;
         position: absolute;
+        opacity: 0.7;
+    }
+
+    .weather h3{
+        grid-column: 1;
+        justify-self: left;
+        margin: 1px;
     }
 
     picture {
