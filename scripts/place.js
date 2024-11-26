@@ -23,5 +23,5 @@ function updateWindChill() {
         windChillCalculation.innerText = 'N/A';
     }
 
-    document.addEventListener(DomContentLoaded, updateWindChill);
+    document.addEventListener(DOMContentLoaded, updateWindChill);
 }
