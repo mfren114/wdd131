@@ -95,3 +95,43 @@ const temples = [
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-47638.jpg"
     }]
+
+function renderTemples(templeList) {
+    const photoAlbum = document.querySelector('.photoAlbum');
+    photoAlbum.innerHTML = '';
+
+    templeList.foreach(obj => {
+        const figure = document.createElement('figure');
+        figure.classList.add("temple-fig");
+
+        const formattedArea = obj.area.toLocalString();
+        figure.innerHTML =
+            `<h3>${obj.templeName}</h3>
+            <p>Location: ${obj.location}</p>
+            <p>Dedicated: ${obj.dedicated}</p>
+            <p>Area: ${formattedArea} sq ft</p>
+            <img src="${obj.imageUrl}" alt="${obj.templeName}" loading="lazy">`;
+
+        photoAlbum.appendChild(figure)
+    })
+}
+
+renderTemples(temples);
+
+const oldLink = document.querySelector("#old");
+
+oldLink.addEventListener("click", function () {
+    const oldTemples = temples.filter(function (temple) {
+        const dateDedicated = temple.dedicated;
+        const year = dateDedicated.slice(0, 4);
+        return year < 1900;
+    });
+    renderTemples(oldTemples);
+    document.getElementById('albumTitle').textContent = "Old Temples";
+})
+
+
+const newLink = document.querySelector("#new");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
+
