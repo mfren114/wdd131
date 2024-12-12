@@ -2,13 +2,13 @@ body {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    background-color: #192c57;
-    color: #fff0f0;
+    background-color: #ffffff;
+    color: #ffffff;
     font-family: "Verdana", sans-serif;
 }
 
 h1 {
-    background-color: #553816;
+    background-color: #764105;
     font-weight: bold;
     text-align: center;
     padding-top: 5px;
@@ -20,12 +20,76 @@ h1 {
 .reviewform fieldset {
     margin: 5px;
     border-radius: 10px;
-    border: #fff0f0 solid -1rem;
-    background-color: #553816;
+    border: #553816 solid 1rem;
+    background-color: #764105;
 }
 
 .reviewform legend {
     font-weight: bold;
+    display: block;
+    background: #553816;
+    font-weight: bold;
+    border: #192c57;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.reviewform label,
+.reviewform p {
+    display: block;
+    margin: 0;
+    padding: 5px;
+}
+
+.reviewform input[type="radio"] {
+    position: relative;
+    caret-color: #192c57;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.stars label {
+    width: 20px;
+    height: 20px;
+    margin-left: 1px;
+    display: flex;
+    align-items: center;
+    caret-color: #fff0f0;
+    cursor: pointer;
+}
+
+.stars>label::before {
+    content: "\2605";
+}
+
+.star input:checked~label::before {
+    content: "\2605";
+    color: #192c57;
+}
+
+.reviewform .container {
+    display: block;
+    position: relative;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.reviewform input[type="submit"] {
+    color: #fff0f0;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 5px;
+    background-color: #553816;
+    border-color: #764105;
 }
 
 footer {
@@ -34,10 +98,9 @@ footer {
     font-weight: bold;
     text-align: center;
     color: #fff0f0;
-    background-color: #553816;
+    background-color: #764105;
     border-radius: 10px;
     justify-content: center;
     padding: 1px;
     margin: auto;
 }
-

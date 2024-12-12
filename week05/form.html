@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,33 +13,72 @@
     <link href="https://fonts.googleapis.com/css?family=Verdana&display=swap" rel="stylesheet">
     <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
-<header>
-    <h1>Product Review</h1>
-</header>
-<main>
-    <form method="get" action="review.html" class="reviewform">
-        <fieldset>
-            <legend>Product Information</legend>
-            <label for="productName">Product Name</label>
-            <input type="text" id="q1" name="q1">
-            <label for="q2">If I wanted to submit a form, what would be the right html element to put?</label>
-            <textarea id="q2" name="q2" rows="1" ></textarea>
-            <label for="q3">What is tag is used to group related elements in a form?</label>
-            <select id="q3" name="q3">
-                <option value="fieldset">Fieldset</option>
-                <option value="option">Option</option>
-                <option value="radio">Radio</option>
-            </select>
-            <label for="q4">Whats missing? UTF-</label>
-            <input type="number" id="q4" name="q4">
-        </fieldset>
-        <button type="submit">Submit Quiz</button>
-    </form>
-</main> 
-<footer>
-    <p>©<span id="currentYear"></span> | Mathew Frenette | California, USA</p>
-    <p id="lastModified"></p>
-</footer>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="reviewform">
+            <fieldset>
+                <legend>Product Information</legend>
+                <label for="productname">Product Name</label>
+                <select id="productname" name="product">
+                    <option id="notavailable" value disabled selected>Choose Product...</option>
+                    <option value="washer">Washer</option>
+                    <option value="dryer">Dryer</option>
+                    <option value="waterheater">Water Heater</option>
+                </select>
+                <label for="installdate">Date of Installation</label>
+                <input type="date" id="installdate" required>
+                <p>Star Rating</p>
+                <div class="stars" id="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required>
+                    <label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required>
+                    <label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required>
+                    <label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required>
+                    <label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required>
+                    <label for="onestar"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Features</legend>
+                <p>Which features did you find useful?</p>
+                <p id="brackets">(click all that apply)</p>
+                <label class="container">
+                    <input type="checkbox" id="durability" value="yes"> Durability <span class="checkbox"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" id="ease" value="yes"> Ease of Use <span class="checkbox"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" id="performance" value="yes"> Performance <span class="checkbox"></span>
+                </label>
+                <label class="container">
+                    <input type="checkbox" id="design" value="yes"> Design <span class="checkbox"></span>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review</legend>
+                <label for="writtenreview">Written Review</label>
+                <textarea id="writtenreview" name="written review"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>User Information</legend>
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="user name">
+            </fieldset>
+            <input id="submit" type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> | Mathew Frenette | California, USA</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
