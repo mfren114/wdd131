@@ -1,0 +1,43 @@
+body {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #192c57;
+    color: #fff0f0;
+    font-family: "Verdana", sans-serif;
+}
+
+h1 {
+    background-color: #553816;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+.reviewform fieldset {
+    margin: 5px;
+    border-radius: 10px;
+    border: #fff0f0 solid -1rem;
+    background-color: #553816;
+}
+
+.reviewform legend {
+    font-weight: bold;
+}
+
+footer {
+    display: block;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+    color: #fff0f0;
+    background-color: #553816;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 1px;
+    margin: auto;
+}
+
